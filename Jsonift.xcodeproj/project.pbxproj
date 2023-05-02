@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F52CD37829F836750054EA14 /* JsoniftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CD37729F836750054EA14 /* JsoniftApp.swift */; };
+		F52CD37A29F836750054EA14 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CD37929F836750054EA14 /* ContentView.swift */; };
+		F52CD37C29F836760054EA14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F52CD37B29F836760054EA14 /* Assets.xcassets */; };
+		F52CD37F29F836760054EA14 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F52CD37E29F836760054EA14 /* Preview Assets.xcassets */; };
+		F52CD38D29F8372A0054EA14 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52CD38C29F8372A0054EA14 /* Cocoa.framework */; };
+		F52CD39229F8372A0054EA14 /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CD39129F8372A0054EA14 /* SourceEditorExtension.swift */; };
+		F52CD39429F8372A0054EA14 /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CD39329F8372A0054EA14 /* SourceEditorCommand.swift */; };
+		F52CD39929F8372A0054EA14 /* Jsonift.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F52CD38A29F8372A0054EA14 /* Jsonift.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F52CD3A029F837700054EA14 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = F52CD39F29F837700054EA14 /* OrderedCollections */; };
+		F52CD3A229F837F20054EA14 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CD3A129F837F20054EA14 /* AppError.swift */; };
+		F52CD3A429F838160054EA14 /* DataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CD3A329F838160054EA14 /* DataType.swift */; };
+		F52CD3A729F8384C0054EA14 /* ISO8601DateFormatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CD3A629F8384C0054EA14 /* ISO8601DateFormatter+Extension.swift */; };
+		F52CD3A929F838700054EA14 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CD3A829F838700054EA14 /* String+Extension.swift */; };
+		F52CD3AC29F838B30054EA14 /* Variable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CD3AB29F838B30054EA14 /* Variable.swift */; };
+		F52CD3AE29F8390E0054EA14 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CD3AD29F8390E0054EA14 /* Model.swift */; };
+		F52CD3B029F839ED0054EA14 /* ModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52CD3AF29F839ED0054EA14 /* ModelFactory.swift */; };
+		F52CD3B529FABBF60054EA14 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F52CD3B429FABBF60054EA14 /* XcodeKit.framework */; };
+		F52CD3B629FABBF60054EA14 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F52CD3B429FABBF60054EA14 /* XcodeKit.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F52CD39729F8372A0054EA14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F52CD36C29F836750054EA14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F52CD38929F8372A0054EA14;
+			remoteInfo = "Jsonift Editor";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F52CD39D29F8372B0054EA14 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F52CD39929F8372A0054EA14 /* Jsonift.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F52CD3B729FABBF60054EA14 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F52CD3B629FABBF60054EA14 /* XcodeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F52CD37429F836750054EA14 /* JsoniftApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JsoniftApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F52CD37729F836750054EA14 /* JsoniftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsoniftApp.swift; sourceTree = "<group>"; };
+		F52CD37929F836750054EA14 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F52CD37B29F836760054EA14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F52CD37E29F836760054EA14 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F52CD38029F836760054EA14 /* Jsonift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Jsonift.entitlements; sourceTree = "<group>"; };
+		F52CD38A29F8372A0054EA14 /* Jsonift.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Jsonift.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F52CD38C29F8372A0054EA14 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F52CD38E29F8372A0054EA14 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
+		F52CD39129F8372A0054EA14 /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		F52CD39329F8372A0054EA14 /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		F52CD39529F8372A0054EA14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F52CD39629F8372A0054EA14 /* Jsonift_Editor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Jsonift_Editor.entitlements; sourceTree = "<group>"; };
+		F52CD3A129F837F20054EA14 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		F52CD3A329F838160054EA14 /* DataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataType.swift; sourceTree = "<group>"; };
+		F52CD3A629F8384C0054EA14 /* ISO8601DateFormatter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ISO8601DateFormatter+Extension.swift"; sourceTree = "<group>"; };
+		F52CD3A829F838700054EA14 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		F52CD3AB29F838B30054EA14 /* Variable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variable.swift; sourceTree = "<group>"; };
+		F52CD3AD29F8390E0054EA14 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		F52CD3AF29F839ED0054EA14 /* ModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelFactory.swift; sourceTree = "<group>"; };
+		F52CD3B429FABBF60054EA14 /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F52CD37129F836750054EA14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F52CD38729F8372A0054EA14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F52CD3B529FABBF60054EA14 /* XcodeKit.framework in Frameworks */,
+				F52CD38D29F8372A0054EA14 /* Cocoa.framework in Frameworks */,
+				F52CD3A029F837700054EA14 /* OrderedCollections in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F52CD36B29F836750054EA14 = {
+			isa = PBXGroup;
+			children = (
+				F52CD37629F836750054EA14 /* Jsonift */,
+				F52CD39029F8372A0054EA14 /* Jsonift Editor */,
+				F52CD38B29F8372A0054EA14 /* Frameworks */,
+				F52CD37529F836750054EA14 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F52CD37529F836750054EA14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F52CD37429F836750054EA14 /* JsoniftApp.app */,
+				F52CD38A29F8372A0054EA14 /* Jsonift.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F52CD37629F836750054EA14 /* Jsonift */ = {
+			isa = PBXGroup;
+			children = (
+				F52CD37729F836750054EA14 /* JsoniftApp.swift */,
+				F52CD37929F836750054EA14 /* ContentView.swift */,
+				F52CD37B29F836760054EA14 /* Assets.xcassets */,
+				F52CD38029F836760054EA14 /* Jsonift.entitlements */,
+				F52CD37D29F836760054EA14 /* Preview Content */,
+			);
+			path = Jsonift;
+			sourceTree = "<group>";
+		};
+		F52CD37D29F836760054EA14 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F52CD37E29F836760054EA14 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F52CD38B29F8372A0054EA14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F52CD3B429FABBF60054EA14 /* XcodeKit.framework */,
+				F52CD38C29F8372A0054EA14 /* Cocoa.framework */,
+				F52CD38E29F8372A0054EA14 /* XcodeKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F52CD39029F8372A0054EA14 /* Jsonift Editor */ = {
+			isa = PBXGroup;
+			children = (
+				F52CD3AA29F838830054EA14 /* Model */,
+				F52CD3A529F838380054EA14 /* Helper */,
+				F52CD39129F8372A0054EA14 /* SourceEditorExtension.swift */,
+				F52CD39329F8372A0054EA14 /* SourceEditorCommand.swift */,
+				F52CD39529F8372A0054EA14 /* Info.plist */,
+				F52CD39629F8372A0054EA14 /* Jsonift_Editor.entitlements */,
+			);
+			path = "Jsonift Editor";
+			sourceTree = "<group>";
+		};
+		F52CD3A529F838380054EA14 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F52CD3A129F837F20054EA14 /* AppError.swift */,
+				F52CD3A629F8384C0054EA14 /* ISO8601DateFormatter+Extension.swift */,
+				F52CD3A829F838700054EA14 /* String+Extension.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		F52CD3AA29F838830054EA14 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F52CD3A329F838160054EA14 /* DataType.swift */,
+				F52CD3AB29F838B30054EA14 /* Variable.swift */,
+				F52CD3AD29F8390E0054EA14 /* Model.swift */,
+				F52CD3AF29F839ED0054EA14 /* ModelFactory.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F52CD37329F836750054EA14 /* Jsonift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F52CD38329F836760054EA14 /* Build configuration list for PBXNativeTarget "Jsonift" */;
+			buildPhases = (
+				F52CD37029F836750054EA14 /* Sources */,
+				F52CD37129F836750054EA14 /* Frameworks */,
+				F52CD37229F836750054EA14 /* Resources */,
+				F52CD39D29F8372B0054EA14 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F52CD39829F8372A0054EA14 /* PBXTargetDependency */,
+			);
+			name = Jsonift;
+			productName = Jsonift;
+			productReference = F52CD37429F836750054EA14 /* JsoniftApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F52CD38929F8372A0054EA14 /* Jsonift Editor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F52CD39A29F8372B0054EA14 /* Build configuration list for PBXNativeTarget "Jsonift Editor" */;
+			buildPhases = (
+				F52CD38629F8372A0054EA14 /* Sources */,
+				F52CD38729F8372A0054EA14 /* Frameworks */,
+				F52CD38829F8372A0054EA14 /* Resources */,
+				F52CD3B729FABBF60054EA14 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Jsonift Editor";
+			packageProductDependencies = (
+				F52CD39F29F837700054EA14 /* OrderedCollections */,
+			);
+			productName = "Jsonift Editor";
+			productReference = F52CD38A29F8372A0054EA14 /* Jsonift.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F52CD36C29F836750054EA14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					F52CD37329F836750054EA14 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					F52CD38929F8372A0054EA14 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = F52CD36F29F836750054EA14 /* Build configuration list for PBXProject "Jsonift" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F52CD36B29F836750054EA14;
+			packageReferences = (
+				F52CD39E29F837700054EA14 /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
+			productRefGroup = F52CD37529F836750054EA14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F52CD37329F836750054EA14 /* Jsonift */,
+				F52CD38929F8372A0054EA14 /* Jsonift Editor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F52CD37229F836750054EA14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F52CD37F29F836760054EA14 /* Preview Assets.xcassets in Resources */,
+				F52CD37C29F836760054EA14 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F52CD38829F8372A0054EA14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F52CD37029F836750054EA14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F52CD37A29F836750054EA14 /* ContentView.swift in Sources */,
+				F52CD37829F836750054EA14 /* JsoniftApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F52CD38629F8372A0054EA14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F52CD39229F8372A0054EA14 /* SourceEditorExtension.swift in Sources */,
+				F52CD3AC29F838B30054EA14 /* Variable.swift in Sources */,
+				F52CD3A429F838160054EA14 /* DataType.swift in Sources */,
+				F52CD39429F8372A0054EA14 /* SourceEditorCommand.swift in Sources */,
+				F52CD3A729F8384C0054EA14 /* ISO8601DateFormatter+Extension.swift in Sources */,
+				F52CD3B029F839ED0054EA14 /* ModelFactory.swift in Sources */,
+				F52CD3A929F838700054EA14 /* String+Extension.swift in Sources */,
+				F52CD3A229F837F20054EA14 /* AppError.swift in Sources */,
+				F52CD3AE29F8390E0054EA14 /* Model.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F52CD39829F8372A0054EA14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F52CD38929F8372A0054EA14 /* Jsonift Editor */;
+			targetProxy = F52CD39729F8372A0054EA14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F52CD38129F836760054EA14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F52CD38229F836760054EA14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F52CD38429F836760054EA14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Jsonift/Jsonift.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Jsonift/Preview Content\"";
+				DEVELOPMENT_TEAM = 5KQK7C79H7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Jsonift;
+				PRODUCT_NAME = JsoniftApp;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F52CD38529F836760054EA14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Jsonift/Jsonift.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Jsonift/Preview Content\"";
+				DEVELOPMENT_TEAM = 5KQK7C79H7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Jsonift;
+				PRODUCT_NAME = JsoniftApp;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F52CD39B29F8372B0054EA14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Jsonift Editor/Jsonift_Editor.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5KQK7C79H7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Jsonift Editor/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Jsonift Editor";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Jsonift.Jsonift-Editor";
+				PRODUCT_NAME = Jsonift;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F52CD39C29F8372B0054EA14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Jsonift Editor/Jsonift_Editor.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5KQK7C79H7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Jsonift Editor/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Jsonift Editor";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Jsonift.Jsonift-Editor";
+				PRODUCT_NAME = Jsonift;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F52CD36F29F836750054EA14 /* Build configuration list for PBXProject "Jsonift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F52CD38129F836760054EA14 /* Debug */,
+				F52CD38229F836760054EA14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F52CD38329F836760054EA14 /* Build configuration list for PBXNativeTarget "Jsonift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F52CD38429F836760054EA14 /* Debug */,
+				F52CD38529F836760054EA14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F52CD39A29F8372B0054EA14 /* Build configuration list for PBXNativeTarget "Jsonift Editor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F52CD39B29F8372B0054EA14 /* Debug */,
+				F52CD39C29F8372B0054EA14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F52CD39E29F837700054EA14 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F52CD39F29F837700054EA14 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F52CD39E29F837700054EA14 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F52CD36C29F836750054EA14 /* Project object */;
+}
